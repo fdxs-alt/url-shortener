@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+.navbarlogo{
+    display: flex;
+    padding: 0.8rem;
+}
+.links{
+    display: flex;
+    margin-left: 10rem;
+    list-style: none;
+}
+li {
+    margin-right: 1.2rem;
+}
+a {
+    color: hsl(260, 8%, 14%);
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+button{
+    margin-right: 3rem;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    color: hsl(260, 8%, 14%);
+    border-radius: 25px;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
+.signup{
+    color: white;
+    background-color: hsl(0, 0%, 75%);
+}
+.signup:hover{
+    background-color: hsl(260, 8%, 14%);
+    transition: 300ms;
+}
+.login:hover{
+    background-color:  hsl(0, 0%, 75%);
+    color: white;
+    transition: 300ms ease-in;
+}
