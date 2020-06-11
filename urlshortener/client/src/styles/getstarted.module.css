@@ -1,0 +1,24 @@
+.getstarted {
+  display: flex;
+  margin-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.getstarted h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.getstarted p{
+    font-size: 2rem;
+}
+.getstarted button {
+    margin-top: 1.5rem;
+    color: white;
+    background-color: hsl(0, 0%, 75%);
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
