@@ -22,24 +22,33 @@ a {
 a:hover{
     color: red;
 }
-button{
+
+.signup{
     margin-right: 3rem;
-    background-color: white;
+    color: white;
+    background-color: hsl(0, 0%, 75%);
     font-size: 20px;
     border: none;
-    color: hsl(260, 8%, 14%);
     border-radius: 25px;
     padding: .8rem 2rem;
     cursor: pointer;
     outline: none;
-}
-.signup{
-    color: white;
-    background-color: hsl(0, 0%, 75%);
+    
 }
 .signup:hover{
     background-color: hsl(260, 8%, 14%);
-    transition: 300ms;
+    transition: 300ms ease-in;
+}
+.login{
+    margin-right: 3rem;
+    color: hsl(260, 8%, 14%);
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: .8rem 2rem;
+    cursor: pointer;
+    outline: none;
 }
 .login:hover{
     background-color:  hsl(0, 0%, 75%);
