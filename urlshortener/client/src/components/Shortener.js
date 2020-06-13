@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/shortener.module.css";
 import Axios from "axios";
 import Link from './Link'
+import Statistics from './Statistics'
 const Shortener = () => {
   const [urls, setUrls] = useState([]);
   const [url, setUrl] = useState("");
@@ -28,13 +29,14 @@ const Shortener = () => {
             setUrl(e.clipboardData.getData("Text"))
           console.log(url)
           }}
-          placeholder="Shorten a link here"
+          placeholder="Paste a link here"
         />
         <button onClick={handleClick}>Shorten</button>
       </form>
       {urls.map(url => (
         <Link url={url} key={url._id}/>
       ))}
+      <Statistics/>
     </div>
   );
 };

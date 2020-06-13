@@ -1,4 +1,5 @@
 .getstarted {
+  width: fit-content;
   display: flex;
   margin-left: 10%;
   justify-content: space-between;
@@ -6,20 +7,26 @@
   margin-bottom: 15rem;
 }
 .getstarted h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
-.getstarted p{
-    font-size: 2rem;
+.getstarted p {
+  font-size: 2rem;
 }
 .getstarted button {
-    margin-top: 1.5rem;
-    color: white;
-    background-color: hsl(0, 0%, 75%);
-    font-size: 20px;
-    border: none;
-    border-radius: 25px;
-    padding: .8rem 2rem;
-    cursor: pointer;
-    outline: none;
+  margin-top: 1.5rem;
+  color: white;
+  background-color: hsl(0, 0%, 75%);
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  outline: none;
+}
+.getstarted img {
+    width:80%;
+    max-height: 100%;
+    max-width: 600px;
+    object-fit: contain;
 }

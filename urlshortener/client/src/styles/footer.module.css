@@ -1,0 +1,10 @@
+.footer {
+    background-color: hsl(260, 8%, 14%);
+    width: 100%;
+    padding: 5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    align-items: center;
+    
+}
