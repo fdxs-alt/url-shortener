@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import styles from "../styles/shortener.module.css";
 import Axios from "axios";
 import Link from './Link'
@@ -23,9 +23,9 @@ const Shortener = () => {
     <div className={styles.shortenerSection}>
       <form className={styles.shortener}>
         <input
+        value={url}
           type="text"
           onPaste={e => {
-            e.persist();
             setUrl(e.clipboardData.getData("Text"))
           console.log(url)
           }}
