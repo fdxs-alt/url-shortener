@@ -8,9 +8,6 @@ const path = require('path')
 app.use(express.json())
 app.use(cors());
 connectDB();
-app.get('/', (req, res) => {
-    res.send("xd")
-})
 app.use('/url', require('./Routes/shortener'));
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('client/build'))
