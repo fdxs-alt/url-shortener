@@ -27,7 +27,6 @@ const Shortener = () => {
           type="text"
           onPaste={e => {
             setUrl(e.clipboardData.getData("Text"))
-          console.log(url)
           }}
           placeholder="Paste a link here"
         />
