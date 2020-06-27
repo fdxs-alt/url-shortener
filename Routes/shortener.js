@@ -10,7 +10,7 @@ dotenv.config({ path: "./.env.test" });
 router.post("/", async (req, res) => {
   const { longUrl } = req.body;
   const baseUrl = process.env.baseUrl;
-  if (!validURL.isUri(baseUrl)) return res.status(400).json(`Invalid url ${baseUrl}`);
+  if (!validURL.isUri(baseUrl)) return res.status(400).json(`Invalid baseurl ${baseUrl}`);
 
   const urlCode = shortID.generate();
   if (!validURL.isUri(longUrl)) return res.status(400).json(`Invalid url ${longUrl}`);
