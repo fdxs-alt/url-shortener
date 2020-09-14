@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Statistics.module.css";
+import styles from "../styles/statistics.module.css";
 const Statistics = () => {
   return (
     <div className={styles.statistics}>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../styles/Getstarted.module.css'
+import styles from '../styles/getstarted.module.css'
 import ilustration from '../images/illustration-working.svg'
 const GetStarted = () => {
   return (

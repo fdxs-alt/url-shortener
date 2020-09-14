@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/Shortener.module.css";
+import styles from "../styles/shortener.module.css";
 import Axios from "axios";
 import Link from "./Link";
 import Statistics from "./Statistics";
