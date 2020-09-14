@@ -10,10 +10,12 @@ dotenv.config({ path: "./.env.test" });
 router.post("/", async (req, res) => {
   const { longUrl } = req.body;
   const baseUrl = process.env.baseUrl;
-  if (!validURL.isUri(baseUrl)) return res.status(400).json(`Invalid baseurl ${baseUrl}`);
+  if (!validURL.isUri(baseUrl))
+    return res.status(400).json(`Invalid baseurl ${baseUrl}`);
 
   const urlCode = shortID.generate();
-  if (!validURL.isUri(longUrl)) return res.status(400).json(`Invalid url ${longUrl}`);
+  if (!validURL.isUri(longUrl))
+    return res.status(400).json(`Invalid url ${longUrl}`);
   try {
     let url = await URL.findOne({ longUrl });
     if (url) res.json(url);
@@ -23,7 +25,7 @@ router.post("/", async (req, res) => {
         longUrl,
         shortUrl,
         urlCode,
-        date: new Date()
+        date: new Date(),
       });
       await url.save();
       res.json(url);
@@ -39,7 +41,6 @@ router.get("/:code", async (req, res) => {
     if (!url) return res.status(400).json("No url");
     res.redirect(url.longUrl);
   } catch (error) {
-    console.log(err);
     res.status(500).json("Server Error");
   }
 });

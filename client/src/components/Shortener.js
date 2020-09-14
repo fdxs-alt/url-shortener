@@ -1,41 +1,43 @@
-import React, { useState} from "react";
-import styles from "../styles/shortener.module.css";
+import React, { useState } from "react";
+import styles from "../styles/Shortener.module.css";
 import Axios from "axios";
-import Link from './Link'
-import Statistics from './Statistics'
+import Link from "./Link";
+import Statistics from "./Statistics";
 const Shortener = () => {
   const [urls, setUrls] = useState([]);
   const [url, setUrl] = useState("");
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.preventDefault();
+
     const longUrl = {
-      longUrl: url
+      longUrl: url,
     };
 
     Axios.post("/url", longUrl)
-      .then(res => {
+      .then((res) => {
         setUrls([...urls, res.data]);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err.response));
+
     setUrl("");
   };
   return (
     <div className={styles.shortenerSection}>
       <form className={styles.shortener}>
         <input
-        value={url}
+          defaultValue={url}
           type="text"
-          onPaste={e => {
-            setUrl(e.clipboardData.getData("Text"))
+          onPaste={(e) => {
+            setUrl(e.clipboardData.getData("Text"));
           }}
           placeholder="Paste a link here"
         />
-        <button onClick={handleClick}>Shorten</button>
+        <button onClick={(e) => handleClick(e)}>Shorten</button>
       </form>
-      {urls.map(url => (
-        <Link url={url} key={url._id}/>
+      {urls.map((url) => (
+        <Link url={url} key={url._id} />
       ))}
-      <Statistics/>
+      <Statistics />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../styles/footer.module.css";
-import twitter from '../images/icon-twitter.svg'
-import facebook from '../images/icon-facebook.svg'
-import instagram from '../images/icon-instagram.svg'
-import pin from '../images/icon-pinterest.svg'
+import styles from "../styles/Footer.module.css";
+import twitter from "../images/icon-twitter.svg";
+import facebook from "../images/icon-facebook.svg";
+import instagram from "../images/icon-instagram.svg";
+import pin from "../images/icon-pinterest.svg";
 const Footer = () => {
   return (
     <div className={styles.footer}>
@@ -33,17 +33,17 @@ const Footer = () => {
       <div>
         <h4>Company</h4>
         <p>
-        About <br/>
-        Our Team <br />
-        Careers
-          <br />  Contact
+          About <br />
+          Our Team <br />
+          Careers
+          <br /> Contact
         </p>
       </div>
-      <div style={{display: "flex", justifyContent: "space-around"}}>
-        <img src={twitter} alt="twitter"/>
-        <img src={facebook} alt="facebook"/>
-        <img src={instagram} alt="instagram"/>
-        <img src={pin} alt="pinterest"/>
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <img src={twitter} alt="twitter" />
+        <img src={facebook} alt="facebook" />
+        <img src={instagram} alt="instagram" />
+        <img src={pin} alt="pinterest" />
       </div>
     </div>
   );

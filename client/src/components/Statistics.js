@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../styles/statistics.module.css";
+import styles from "../styles/Statistics.module.css";
 const Statistics = () => {
   return (
     <div className={styles.statistics}>
-      <h2>Advanced Statistics</h2>
+      <h3>Advanced Statistics</h3>
       <p>
         Track how your links are performing across the web with our advanced
         statistics dashboard.

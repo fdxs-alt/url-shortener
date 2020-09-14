@@ -1,10 +1,12 @@
 .getstarted {
-  width: fit-content;
   display: flex;
-  margin-left: 10%;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 5rem;
+  padding-bottom: 1rem;
   margin-bottom: 15rem;
+  width: 100%;
+  max-width: 1500px;
 }
 .getstarted h1 {
   font-size: 4rem;
@@ -25,8 +27,64 @@
   outline: none;
 }
 .getstarted img {
-    width:80%;
-    max-height: 100%;
-    max-width: 600px;
-    object-fit: contain;
+  width: 100%;
+  max-width: 500px;
+}
+@media (max-width: 1024px) {
+  .getstarted {
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 6rem;
+  }
+  .getstarted h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .getstarted p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .getstarted {
+    margin-bottom: 2rem;
+    padding-top: 0rem;
+  }
+
+  .getstarted h1 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .getstarted img {
+    width: 400px;
+  }
+  .getstarted p {
+    font-size: 1.3rem;
+  }
+
+  .getstarted button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .getstarted h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .getstarted img {
+    width: 300px;
+    padding: 2rem;
+  }
+  .getstarted p {
+    font-size: 1rem;
+  }
+
+  .getstarted button {
+    font-size: 0.8rem;
+  }
 }
