@@ -1,5 +1,5 @@
 ## URL-shortener
-Simple app built with React and Express, which allows user to shorten any link. [Design based on](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
+Simple app built with React and Express, which allows user to shorten any link. [Design based on Frontend Mentor challange](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
 ##### Features: 
 1. Fully responsible
 2. Mongoose as ORM
